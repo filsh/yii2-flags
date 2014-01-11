@@ -1,0 +1,23 @@
+{
+  "name": "filsh/yii2-flags",
+  "description": "Flags widget for yii2 framework",
+  "keywords": ["yii", "widget", "flags"],
+  "type": "library",
+  "support": {
+          "email": "imaliy.filsh@gmail.com",
+          "source": "https://github.com/filsh/yii2-flags"
+  },
+  "authors": [
+          {
+                  "name": "Igor Maliy",
+                  "email": "imaliy.filsh@gmail.com"
+          }
+  ],
+  "require": {
+          "yiisoft/yii2": "*"
+  },
+  "autoload": {
+          "psr-0": { "yii\\flags\\": "" }
+  },
+  "target-dir": "yii/flags"
+}

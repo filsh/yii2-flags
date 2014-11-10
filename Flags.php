@@ -82,7 +82,7 @@ class Flags extends \yii\base\Widget
             }
         } else {
             $img = $bundle->baseUrl . '/' . $this->type . '/' . $this->flag . '.png';
-            $size = explode('/', $this->type)[1] . 'px';
+            $size = $this->getSize() . 'px';
             $css = [
                 'background-image: url("'.$img.'")',
                 'display: inline-block',
@@ -95,6 +95,11 @@ class Flags extends \yii\base\Widget
     
     protected function getCssClass()
     {
-        return 'flag-' . $this->flag;
+        return 'flag-' . $this->flag . '-' . $this->getSize();
+    }
+    
+    protected function getSize()
+    {
+        return explode('/', $this->type)[1];
     }
 }
